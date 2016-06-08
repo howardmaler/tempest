@@ -1,0 +1,43 @@
+
+BEFORE YOU BEGIN
+
+- If Tempest has never been installed then the /etc/tempest/ directory will not exists, that being said
+- this should be cofirmed prior to proceeding. If it is not then tempest may have been installed and this
+- tutorial will not work.
+
+LOG INTO SYSTEM WITH ROOT PERMISSIONS
+
+1. Open the SSHProxy and log in
+2. >> ssh ubuntu@tempest
+
+INSTAL TEMPEST AND GITHUB
+
+- First Install Updates
+1. >> issue sudo apt-get update       wait for the process to complete ubuntu@tempest prompt will return when complete
+
+- Next install tempest
+2. >> issue sudo install tempest      wait for the process to complete ubuntu@tempest prompt will return when complete
+
+- Next install git
+3. >> sudo install git                wait for the process to complete ubuntu@tempest prompt will return when complete
+
+
+Configuring Tempest for Ubuntu 14.04
+
+- A directory will needs to be created to hold the tempest log files. In a command environment log files are your
+- best friend.
+- Create dir for tempest config
+
+1. sudo mkdir /var/local/log/tempest
+
+- Tempest requires a configuration file to do work that is desired which should be located in
+- /etc/tempest/tempest.conf. The Ubuntu Tempest setup does not create it when tempest is installing.
+- There are several variations of the file in the alta3 github.
+
+- Clone tempest files from github
+2. sudo git clone https://github.com/alta3/tempest
+
+
+
+
+
